@@ -131,3 +131,74 @@ header{
         }
     }
 }
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    gap:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @media (max-width: 1440px){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--blue);
+    color: var(--base-100);
+    border-radius: 10px;
+    transition: ease 0.3s all;
+    &:hover {
+        text-decoration: none;
+        background-color: var(--base-800);
+    }
+    &.white{
+        background-color: white;
+        color: var(--base-800);
+        &:hover{
+            background-color: var(--base-100);
+            color: var(--base);
+        }
+    }
+    &.black{
+        background-color: black;
+        color: white;
+        &:hover{
+            background-color: var(--base);
+            color: var(--base-100);
+        }
+    }
+}
+.hero{
+    display:flex;
+
+    .hero-blue{
+        flex: 1;
+        background-color: var(--blue-100);
+        border-radius: 30px;
+        padding: 30px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .hero-yellow{
+        flex: 1;
+        background-color: var(--yellow);
+        border-radius: 30px;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        img{
+            margin-top:-60px;
+            max-width: 420px;
+            margin-bottom: 0px;
+        }
+    }
+}

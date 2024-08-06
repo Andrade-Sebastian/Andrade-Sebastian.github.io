@@ -342,10 +342,11 @@ h3{
 .bento{
     .bento-grid{
         display: grid;
-        grid-gap: 30px;
+        grid-gap: 50px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, 1fr);
         height: 960px;
+        
         @media(max-width: 1024px){
             grid-template-rows: repeat(8, 1fr);
         }
@@ -360,13 +361,13 @@ h3{
             background-color: var(--base-100);
             border-radius: 15px;
             position: relative;
-            overflow:hidden;
+            overflow: hidden;
             img{
                 position: absolute;
                 top: 0;
                 left: 0;
                 height: 100%;
-                object-fit:cover;
+                object-fit:calc(10%);
                 transition: ease 3s all;
             }
             &:hover{
@@ -394,125 +395,100 @@ h3{
                 }
             }
             &:nth-child(3){
+                img{
+                    left: 10px;
+                }
                 grid-column: span 1;
-                grid-row: span 1;
+                grid-row: span 2;
                 @media(max-width: 1024px){
                     grid-column: span 2;
                     grid-row: span 4;
                 }
             }
             &:nth-child(4){
-                grid-column: span 1;
+                grid-column: span 2;
                 grid-row: span 1;
                 @media(max-width: 1024px){
                     grid-column: span 3;
                     grid-row: span 2;
                 }
             }
-            &:nth-child(5){
+            /* &:nth-child(5){
                 grid-column: span 2;
                 grid-row: span 1;
                 @media(max-width: 1024px){
                     grid-column: span 5;
                     grid-row: span 2;
                 }
-            }
+            } */
         }
     }
 }
 
-.chatbot{
-    .chatbot-blue{
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.education {
+    .holder-green {
         background-color: var(--blue-100);
         border-radius: 30px;
-        padding: 30px;
-        gap:30px;
+        padding:30px;
         display: flex;
-        @media(max-width:1024px){
-            flex-direction: column;
+        @media(max-width: 1024px){
+            flex-direction: row;
         }
-        p{
-            margin-bottom: 30px;
-        }
-        .chat-info{
-            flex: 3;
-            padding-right: 30px;
-        }
-        .chat-box{
-            flex:4;
-            background-color: white;
-            border-radius: 15px;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            .scroll-area{
-                max-height: 300px;
-                height: 300px;
-                overflow-y: scroll;
-                ul{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    gap: 15px;
-                    li{
-                        display: flex;
-                        align-items: center;
-                        gap: 15px;
-
-                        &:nth-child(even){
-                            text-align: right;
-                            justify-content: flex-end;
-                            flex-direction: row-reverse;
-                            span{
-                                background-color: var(--yellow);
-                            }
-                        }
-                        span{
-                            background-color: var(--blue-400);
-                            width: 64px;
-                            height: 64px;
-                            border-radius: 50%;
-                            display: inline-flex;
-                            align-items: center;
-                            justify-content: center;
-                            @media(max-width: 768px) {
-                                width: 48px;
-                                height: 48px;
-                            }
-                        }
-                        div{
-                            flex:1;
-                        }
-                    }
+        .top-row{
+            flex:1;
+            ul{
+                list-style-type: none;
+                gap:10px;
+                margin-right: 100px;
+                margin-bottom: 20px;
+                li{
+                    display: inline-block;
+                    background-color: var(--blue-400);
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    margin-bottom: 10px;
                 }
+
             }
-
-            .chat-message{
-                display: flex;
-                margin-top: 15px;
-                gap: 15px;
-                input{
-                    border-radius: 10px;
-                    flex:1;
-                    padding: 15px;
-                    border:1px solid transparent;
-                    background-color: var(--base-100);
-                    &:hover{
-                        outline:none;
-                        background-color: white;
-                        border: 1px solid var(--base-100)
-
-                    }
-                    &:focus{
-                        outline:none;
-                        background-color: white;
-                        border: 1px solid var(--base-100)
-                    }
-                }
-                button{
-                    border: none;
-                    cursor: pointer;
-                }
+        }
+        .bottom-row{
+            flex: 1;
+            p{
+                margin-bottom: 20px;
             }
         }
     }

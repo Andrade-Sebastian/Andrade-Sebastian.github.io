@@ -1,268 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastian's Portfolio Web Design</title>
     <!-- Connecting CSS File -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <!-- Connecting JS File -->
-    <script src="./scripts.js"> </script>
-    <link rel="icon" type="image/jpg" href="./imgs/sebastian.jpg">
-
-</head>
-<body>
+    <script src="./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/sebastian.jpg" />
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo-holder">
-            <div class="logo"> L </div>
-            <div class="logo-text"> Portfolio Website </div>
+      <a href="#" class="logo-holder">
+        <div class="logo">L</div>
+        <div class="logo-text">Portfolio Website</div>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="mailto:sebastiana@unr.edu" class="button">Contact Me</a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
         </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Skills</a>
-                </li>
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Education</a>
-                </li>
-                <li>
-                    <a href="mailto:sebastiana@unr.edu" class="button">Contact Me</a>
-                </li>
-            </ul>
-            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
-                  </svg>
-                  
-            </a>
-        </nav>
+      </nav>
     </header>
     <main>
-        <section class="hero container">
-            <div class="hero-blue">
-                <div>
-                    <h1><small>Hi I'm</small>
-                        Sebastian Andrade
-                    </h1>
-                    <p>
-                        Fourth year student at the University of Nevada, Reno. Ambitious and motivated bilingual (English and Spanish) student determined to learn, and problem solve. Hard worker 
-                        experienced with project management, research, and time management skills, as well as leadership skills to keep a team 
-                        organized, focused, and motivated. <span>I am interested in AI and Cybersecurity.</span>
-                    </p>
-                    <div class="call-to-action">
-                        <a href="./Technical Resume PDF - 2024.pdf" target="_blank" class="button black">
-                            View Resume
-                        </a>
-                        <!-- Maybe instead of OS mail feature, route to another page -->
-                        <a href="mailto:sebastiana@unr.edu" class="button white">
-                            Contact Me
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="#">
-                            <img src="./imgs/github.png" alt="GitHub" width="48">
-                        </a>
-                        <a href="#">
-                            <img src="./imgs/gitlab.png" alt="GitLab" width="60">
-                        </a>
-                        <a href="#">
-                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48">
-                        </a>
-                    </div>
-                </div>
+      <section class="hero container">
+        <div class="hero-blue">
+          <div>
+            <h1>
+              <small>Hi I'm</small>
+              Sebastian Andrade
+            </h1>
+            <p>
+              Fourth year student at the University of Nevada, Reno. Ambitious
+              and motivated bilingual (English and Spanish) student determined
+              to learn, and problem solve. Hard worker experienced with project
+              management, research, and time management skills, as well as
+              leadership skills to keep a team organized, focused, and
+              motivated. <span>I am interested in AI and Cybersecurity.</span>
+            </p>
+            <div class="call-to-action">
+              <a
+                href="./Technical Resume PDF - 2024.pdf"
+                target="_blank"
+                class="button black"
+              >
+                View Resume
+              </a>
+              <!-- Maybe instead of OS mail feature, route to another page -->
+              <a href="mailto:sebastiana@unr.edu" class="button white">
+                Contact Me
+              </a>
             </div>
-            <div class="hero-yellow">
-                <img src="./imgs/transparentMe.png" 
-                alt="Sebastian Andrade" width="100%"/>
+            <div class="social-links">
+              <a href="#">
+                <img src="./imgs/github.png" alt="GitHub" width="48" />
+              </a>
+              <a href="#">
+                <img src="./imgs/gitlab.png" alt="GitLab" width="60" />
+              </a>
+              <a href="#">
+                <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
+              </a>
             </div>
-        </section>
-        <section class="logos container">
-            <div class="marquee">
-                <div class="track">
-                    <img src="./imgs/html.png"
-                    alt="HTML" width="128"/>
-                    <img src="./imgs/c.png"
-                    alt="C" width="128"/>
-                    <img src="./imgs/cplusplus.png"
-                    alt="CPP" width="128"/>
-                    <img src="./imgs/css.png"
-                    alt="CSS" width="128"/>
-                    <img src="./imgs/python.png"
-                    alt="Python" width="128"/>
-                    <img src="./imgs/react.png"
-                    alt="React" width="128"/>
-                    <img src="./imgs/javascript.png"
-                    alt="JS" width="128"/>
-                    <img src="./imgs/vscode.png"
-                    alt="VSCode" width="128"/>
-                    <img src="./imgs/html.png"
-                    alt="HTML" width="128"/>
-                    <img src="./imgs/c.png"
-                    alt="C" width="128"/>
-                    <img src="./imgs/cplusplus.png"
-                    alt="CPP" width="128"/>
-                    <img src="./imgs/css.png"
-                    alt="CSS" width="128"/>
-                    <img src="./imgs/python.png"
-                    alt="Python" width="128"/>
-                    <img src="./imgs/react.png"
-                    alt="React" width="128"/>
-                    <img src="./imgs/javascript.png"
-                    alt="JS" width="128"/>
-                    <img src="./imgs/vscode.png"
-                    alt="VSCode" width="128"/>
-
-                    
-                </div>
-            </div>
-        </section>
-        <section class="skills container">
-            <h2>
-                <small>About Me</small>
-                Skills
-            </h2>
-            <div class="holder-blue"> 
-                <div class="left-column">
-                    <h3> Frontend</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                    </ul>
-                    <h3> Backend</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Node.js</li>
-                    </ul>
-
-                </div>
-                    <div class="right-column">
-                <h3> A bit about me</h3>
-                <p>
-                    Hi, I'm Sebastian, Lorem ipsum dolor sit amet, liber consulatu sea ne. 
-                    Duo et case tantas posidonium, per te porro nostrud epicurei, latine adipisci nam ad. 
-                    Diam consectetuer mei ut. Audire electram te nec, vel ne idque placerat theophrastus. 
-                    Pri ne indoctum intellegat, at brute soleat everti quo. Sea prima equidem assueverit te, clita partem quo ei. 
-                    Vim eu minim dicit vituperatoribus, sensibus recteque neglegentur et sit, cu eos eros vocent gloriatur. 
-                    Id omnes molestiae usu, per ludus aperiam placerat no, est delenit scaevola constituto ex. 
-                    Solet pericula ne his, rebum choro erroribus ut his. Omnium impedit oporteat eu per. Hinc malorum labitur ut mei, 
-                    ut has solet voluptaria. Exerci diceret vivendo et eum. Vis quando voluptatibus in. Ex est alienum laboramus, 
-                    elitr oportere facilisis id vim. Ut causae aliquip per, esse exerci consetetur nam at, vel ei mazim invenire omittantur. 
-                    In quo veniam admodum.
-                </p>
-                <p> 
-                    Ea vocent dolorum mei. Eum volutpat definiebas te, in lorem omittam eos, cum alterum inermis sententiae no. 
-                    Quo ex corpora forensibus interpretaris, an cum aliquid volutpat, oporteat delicata cu nec. Sit idque conceptam cu. Et vim animal 
-                    scaevola, qui an omnis nominati platonem, ne est natum augue persecuti. Ad munere insolens eos, sit vocibus fierent vivendum ad. 
-                    Nec veri commune no, primis atomorum convenire an pro. Exerci moderatius dissentiunt ut mei. Elitr principes an mel, nec ut quem idque consetetur. 
-                    Mea ei placerat reprehendunt, mundi urbanitas vim ea. Eu paulo dignissim eam. Dicat labore oporteat an eam. Etiam tincidunt conclusionemque cu vix, vim suas mazim sanctus et, 
-                    aeque melius cum ad. Sit ut prompta dolorum maluisset. Possim gloriatur vituperatoribus eu vix, an pro aeque dicam iracundia. Sed alterum facilisi ne, veniam audiam ei his,
-                     mel ei reque dicant erroribus.
-                </p>
-                 </div> 
-            </div>
-        </section>
-        <section class="bento container">
-            <h2>
-                <small>
-                    Previous
-                </small>
-                Completed Projects
-            </h2>
-            <!-- Notes: Projects include 1. Pacman, 2. E-commerce Site, 3. Fashion suggestion app, 4. apex extinction, 5. la liga database  -->
-            <div class="bento-grid">
-                <a href="#" class="bento-item">
-                    <img src="./imgs/pacman.png"
-                    alt="Project 1 - Pacman game remade"
-                    width="100%"/>
-                </div>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Not Fully Loaded - Project 2 .png"
-                    alt="Project 2 - E-commerce site"
-                    width="100%"/>
-                </div>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/iPhone Outfit Suggestion App.png"
-                    alt="Project 3 - Fashion Suggestion AI App"
-                    width="100%"/>
-                </div>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Apex Extinction Game.png"
-                    alt="Project 4 - Apex Extinction Game"
-                    width="100%"/>
-                </div>
-                <a href="#" class="bento-item">
+          </div>
+        </div>
+        <div class="hero-yellow">
+          <img
+            src="./imgs/transparentMe.png"
+            alt="Sebastian Andrade"
+            width="100%"
+          />
+        </div>
+      </section>
+      <section class="logos container">
+        <div class="marquee">
+          <div class="track">
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/c.png" alt="C" width="128" />
+            <img src="./imgs/cplusplus.png" alt="CPP" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/python.png" alt="Python" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/javascript.png" alt="JS" width="128" />
+            <img src="./imgs/vscode.png" alt="VSCode" width="128" />
+            <img src="./imgs/html.png" alt="HTML" width="128" />
+            <img src="./imgs/c.png" alt="C" width="128" />
+            <img src="./imgs/cplusplus.png" alt="CPP" width="128" />
+            <img src="./imgs/css.png" alt="CSS" width="128" />
+            <img src="./imgs/python.png" alt="Python" width="128" />
+            <img src="./imgs/react.png" alt="React" width="128" />
+            <img src="./imgs/javascript.png" alt="JS" width="128" />
+            <img src="./imgs/vscode.png" alt="VSCode" width="128" />
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills container">
+        <h2>
+          <small>About Me</small>
+          Skills
+        </h2>
+        <div class="holder-blue">
+          <div class="left-column">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>HTML</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+              <li>Python</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <h3>A bit about me</h3>
+            <p>
+              Hi, I'm Sebastian, Lorem ipsum dolor sit amet, liber consulatu sea
+              ne. Duo et case tantas posidonium, per te porro nostrud epicurei,
+              latine adipisci nam ad. Diam consectetuer mei ut. Audire electram
+              te nec, vel ne idque placerat theophrastus. Pri ne indoctum
+              intellegat, at brute soleat everti quo. Sea prima equidem
+              assueverit te, clita partem quo ei. Vim eu minim dicit
+              vituperatoribus, sensibus recteque neglegentur et sit, cu eos eros
+              vocent gloriatur. Id omnes molestiae usu, per ludus aperiam
+              placerat no, est delenit scaevola constituto ex. Solet pericula ne
+              his, rebum choro erroribus ut his. Omnium impedit oporteat eu per.
+              Hinc malorum labitur ut mei, ut has solet voluptaria. Exerci
+              diceret vivendo et eum. Vis quando voluptatibus in. Ex est alienum
+              laboramus, elitr oportere facilisis id vim. Ut causae aliquip per,
+              esse exerci consetetur nam at, vel ei mazim invenire omittantur.
+              In quo veniam admodum.
+            </p>
+            <p>
+              Ea vocent dolorum mei. Eum volutpat definiebas te, in lorem
+              omittam eos, cum alterum inermis sententiae no. Quo ex corpora
+              forensibus interpretaris, an cum aliquid volutpat, oporteat
+              delicata cu nec. Sit idque conceptam cu. Et vim animal scaevola,
+              qui an omnis nominati platonem, ne est natum augue persecuti. Ad
+              munere insolens eos, sit vocibus fierent vivendum ad. Nec veri
+              commune no, primis atomorum convenire an pro. Exerci moderatius
+              dissentiunt ut mei. Elitr principes an mel, nec ut quem idque
+              consetetur. Mea ei placerat reprehendunt, mundi urbanitas vim ea.
+              Eu paulo dignissim eam. Dicat labore oporteat an eam. Etiam
+              tincidunt conclusionemque cu vix, vim suas mazim sanctus et, aeque
+              melius cum ad. Sit ut prompta dolorum maluisset. Possim gloriatur
+              vituperatoribus eu vix, an pro aeque dicam iracundia. Sed alterum
+              facilisi ne, veniam audiam ei his, mel ei reque dicant erroribus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="bento container">
+        <h2>
+          <small> Previous </small>
+          Completed Projects
+        </h2>
+        <div class="bento-grid">
+          <a href="#" class="bento-item">
+            <img
+              src="./imgs/pacman.png"
+              alt="Project 1 - Pacman game remade"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src="./imgs/Not Fully Loaded - Project 2 .png"
+              alt="Project 2 - E-commerce site"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src="./imgs/iPhone Outfit Suggestion App.png"
+              alt="Project 3 - Fashion Suggestion AI App"
+              width="100%"
+            />
+          </a>
+          <a href="#" class="bento-item">
+            <img
+              src="./imgs/Apex Extinction Game.png"
+              alt="Project 4 - Apex Extinction Game"
+              width="100%"
+            />
+          </a>
+          <!-- <a href="#" class="bento-item">
                     <img src="./imgs/LaLiga.png"
                     alt="Project 5 - La Liga Database App"
                     width="100%"/>
-                </div>
-            </div>
-        </section>
-        <section class="chatbot container">
-            <h2>
-                <small>
-                    Talk to me
-                </small>
-                Chatbot
-            </h2>
-            <div class="chatbot-blue">
-                <div class="chat-info">
-                    <h3>Azure AI Chatbot</h3>
-                    <p>I've put together a chatbot here
-                        which knows all of my skills,
-                        past projects, and has a copy of
-                        my resume. You can use it to ask
-                        questions about me to get a better 
-                        idea of who I am!
-                    </p>
-                    <p>You can also download my resume here
-                        if you want to take a look.
-                    </p>
-                    <a href="./Technical Resume PDF - 2024.pdf" target="_blank" class="button black">Download Resume</a>
-                </div>
-                <div class="chat-box">
-                    <div class="scroll-area">
-                        <ul id="chat-log">
-                            <li>
-                                <span class="avatar-bot">
-                                    AI
-                                </span>
-                                <div class="message">
-                                    Hi, I'm a chatbot
-                                    that lets you interact with 
-                                    this portfolio. How can I help?
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar-user">
-                                    User
-                                </span>
-                                <div class="message">
-                                    I have a question to ask you 
-                                    about this resume.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="chat-message">
-                        <input type="text"
-                        placeholder="Hey Sebastian, what skills are you best at?">
-                        <button class="button black"> Send </button>
-                    </div>
-                </div>
-            </div>
+                    </a> -->
+        </div>
+        <!-- Modals -->
+        <div id="modal-pacman" class="modal">
+          <div class="modal-content">
+            <span class="close" data-close="modal-pacman">&times;</span>
+            <h2>Pacman Game Remade</h2>
+            <p>Description of the Pacman game remade project.</p>
+            <img src="./imgs/pacman.png" alt="Pacman Game Screenshot" />
+          </div>
+        </div>
 
-        </section>
+        <div id="modal-ecommerce" class="modal">
+          <div class="modal-content">
+            <span class="close" data-close="modal-ecommerce">&times;</span>
+            <h2>E-commerce Site</h2>
+            <p>Description of the E-commerce site project.</p>
+            <img
+              src="./imgs/Not Fully Loaded - Project 2 .png"
+              alt="E-commerce Site Screenshot"
+            />
+          </div>
+        </div>
+
+        <div id="modal-fashion" class="modal">
+          <div class="modal-content">
+            <span class="close" data-close="modal-fashion">&times;</span>
+            <h2>Fashion Suggestion AI App</h2>
+            <p>Description of the Fashion Suggestion AI App project.</p>
+            <img
+              src="./imgs/iPhone Outfit Suggestion App.png"
+              alt="Fashion Suggestion AI App Screenshot"
+            />
+          </div>
+        </div>
+
+        <div id="modal-apex" class="modal">
+          <div class="modal-content">
+            <span class="close" data-close="modal-apex">&times;</span>
+            <h2>Apex Extinction Game</h2>
+            <p>Description of the Apex Extinction Game project.</p>
+            <img
+              src="./imgs/Apex Extinction Game.png"
+              alt="Apex Extinction Game Screenshot"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="education" class="education container">
+        <h2>
+          <small> My </small>
+          Education
+        </h2>
+        <div class="holder-green">
+          <div class="top-row">
+            <h3>University of Nevada, Reno</h3>
+            <p>Here is a description of UNR and how it relates to me.</p>
+            <h4>Relevant Classes</h4>
+            <ul>
+              <li>Databases</li>
+              <li>Algorithms</li>
+            </ul>
+          </div>
+          <div class="bottom-row">
+            <h3>A bit about TechWise</h3>
+            <p>Talk about TechWise</p>
+            <p>Explain how it has helped me in a more detailed way</p>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

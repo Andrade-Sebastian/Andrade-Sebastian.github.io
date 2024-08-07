@@ -384,6 +384,17 @@ h3{
                 @media(max-width: 1024px){
                     grid-column: span 2;
                     grid-row: span 2;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        object-fit:calc(100%);
+                        transition: ease 3s all;
+                    }
+                }
+                @media(max-width: 768px){
+                    object-fit:fill;
                 }
             }
             &:nth-child(2){
@@ -403,6 +414,10 @@ h3{
                 @media(max-width: 1024px){
                     grid-column: span 2;
                     grid-row: span 4;
+                }
+                @media(max-width: 768px){
+                    height:500px;
+                    object-fit:fill;
                 }
             }
             &:nth-child(4){

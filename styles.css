@@ -341,10 +341,13 @@ h3{
 
 .bento{
     .bento-grid{
+        background-color: var(--blue-100);
+        border-radius: 30px;
         display: grid;
         grid-gap: 50px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        padding: 30px;
         height: 960px;
         
         @media(max-width: 1024px){
@@ -357,7 +360,7 @@ h3{
             height: auto;
         }
         .bento-item{
-            padding: 30px;
+            padding: 15px;
             background-color: var(--base-100);
             border-radius: 15px;
             position: relative;
@@ -436,6 +439,24 @@ h3{
                     grid-row: span 2;
                 }
             } */
+        }
+    }
+    .more-coming-soon{
+        grid-column: span 4; /* Span across all columns */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--blue-100);
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 1.5rem;
+        color: #333;
+        height: 100px; /* Adjust the height as needed */
+        margin-left: 275px;
+        font-weight: 600;
+        @media(max-width:1024px){
+            font-size: 2.0rem;
+            margin-left: 0;
         }
     }
 }
@@ -545,8 +566,6 @@ h3{
     }
 }
 
-
-
 .education {
     .holder-green {
         background-color: var(--blue-100);
@@ -580,4 +599,7 @@ h3{
             }
         }
     }
+}
+footer{
+    margin-bottom: -100%;
 }

@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Connecting JS File -->
     <script src="./scripts.js"></script>
     <link rel="icon" type="image/jpg" href="./imgs/sebastian.jpg" />
@@ -20,8 +28,7 @@
   <body>
     <header>
       <a href="#" class="logo-holder">
-        <div class="logo">L</div>
-        <div class="logo-text">Portfolio Website</div>
+        <div class="logo-text">Sebastian's Portfolio Website | Location: Reno, NV</div>
       </a>
       <nav>
         <ul id="menu">
@@ -38,7 +45,9 @@
             <a href="#education">Education</a>
           </li>
           <li>
-            <a href="mailto:sebastiana@unr.edu" class="button">Contact Me</a>
+            <a href="mailto:sebastiana@unr.edu" target="_blank" class="button"
+              >Contact Me</a
+            >
           </li>
         </ul>
         <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
@@ -86,19 +95,23 @@
                 View Resume
               </a>
               <!-- Maybe instead of OS mail feature, route to another page -->
-              <a href="mailto:sebastiana@unr.edu" class="button white">
+              <a
+                href="mailto:sebastiana@unr.edu"
+                target="_blank"
+                class="button white"
+              >
                 Contact Me
               </a>
             </div>
             <div class="social-links">
-              <a href="#">
+              <a href="https://github.com/Andrade-Sebastian" target="_blank">
                 <img src="./imgs/github.png" alt="GitHub" width="48" />
               </a>
-              <a href="#">
-                <img src="./imgs/gitlab.png" alt="GitLab" width="60" />
+              <a href="https://gitlab.com/sebastianandrade7" target="_blank">
+                <img src="./imgs/gitlab.png" alt="GitLab" width="63" />
               </a>
-              <a href="#">
-                <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
+              <a href="https://www.linkedin.com/in/sebastian-andrade-5a8848106/" target="_blank">
+                <img src="./imgs/linkedin.png" alt="LinkedIn" width="45" />
               </a>
             </div>
           </div>
@@ -224,16 +237,14 @@
               width="100%"
             />
           </a>
-          <div class="more-coming-soon">
-            More coming soon...
-          </div>
+          <div class="more-coming-soon">More coming soon...</div>
         </div>
 
         <!-- Modals -->
         <div id="modal-pacman" class="modal">
           <div class="modal-content">
             <div class="close-holder">
-            <span class="close" data-close="modal-pacman">&times;</span>
+              <span class="close" data-close="modal-pacman">&times;</span>
             </div>
             <h2>Pacman Game Remade</h2>
             <div class="modal-body">
@@ -257,19 +268,20 @@
         <div id="modal-ecommerce" class="modal">
           <div class="modal-content">
             <div class="close-holder">
-            <span class="close" data-close="modal-ecommerce">&times;</span>
+              <span class="close" data-close="modal-ecommerce">&times;</span>
             </div>
             <h2>E-commerce Site</h2>
             <div class="modal-body">
               <div class="left-column">
                 <p><strong>About the project...</strong></p>
-                <p>
-                    Description of the E-commerce site project.
-                </p>
+                <p>Description of the E-commerce site project.</p>
                 <p><strong>Tools Used...</strong></p>
               </div>
               <div class="right-column">
-                <img src="./imgs/Not Fully Loaded - Project 2 .png" alt="E-commerce Site Screenshot" />
+                <img
+                  src="./imgs/Not Fully Loaded - Project 2 .png"
+                  alt="E-commerce Site Screenshot"
+                />
               </div>
             </div>
           </div>
@@ -277,23 +289,21 @@
         <div id="modal-fashion" class="modal">
           <div class="modal-content">
             <div class="close-holder">
-            <span class="close" data-close="modal-fashion">&times;</span>
+              <span class="close" data-close="modal-fashion">&times;</span>
             </div>
             <h2>Fashion Suggestion AI App</h2>
             <div class="modal-body">
               <div class="left-column">
                 <p><strong>About the project...</strong></p>
-                <p>
-                    Description of the Fashion Suggestion AI App project.
-                </p>
+                <p>Description of the Fashion Suggestion AI App project.</p>
                 <p><strong>Tools Used...</strong></p>
               </div>
               <div class="right-column">
                 <img
-                src="./imgs/iPhone Outfit Suggestion App.png"
-                alt="Fashion Suggestion AI App Screenshot"
-                height="500"
-              />
+                  src="./imgs/iPhone Outfit Suggestion App.png"
+                  alt="Fashion Suggestion AI App Screenshot"
+                  height="500"
+                />
               </div>
             </div>
           </div>
@@ -301,22 +311,20 @@
         <div id="modal-apex" class="modal">
           <div class="modal-content">
             <div class="close-holder">
-            <span class="close" data-close="modal-apex">&times;</span>
+              <span class="close" data-close="modal-apex">&times;</span>
             </div>
             <h2>Apex Extinction Game</h2>
             <div class="modal-body">
               <div class="left-column">
                 <p><strong>About the project...</strong></p>
-                <p>
-                    Description of the Apex Extinction Game project.
-                </p>
+                <p>Description of the Apex Extinction Game project.</p>
                 <p><strong>Tools Used...</strong></p>
               </div>
               <div class="right-column">
                 <img
-                src="./imgs/Apex Extinction Game.png"
-                alt="Apex Extinction Game Screenshot"
-              />
+                  src="./imgs/Apex Extinction Game.png"
+                  alt="Apex Extinction Game Screenshot"
+                />
               </div>
             </div>
           </div>
@@ -342,16 +350,71 @@
             <p>Talk about TechWise</p>
             <p>Explain how it has helped me in a more detailed way</p>
             <p>
-                Hi, I'm Sebastian, Lorem ipsum dolor sit amet, liber consulatu sea ne. Duo et case tantas posidonium, per te porro nostrud epicurei, latine adipisci nam ad. Diam consectetuer mei ut. Audire electram te nec, vel ne idque placerat theophrastus. Pri ne indoctum intellegat, at brute soleat everti quo. Sea prima equidem assueverit te, clita partem quo ei. Vim eu minim dicit vituperatoribus, sensibus recteque neglegentur et sit, cu eos eros vocent gloriatur. Id omnes molestiae usu, per ludus aperiam placerat no, est delenit scaevola constituto ex. Solet pericula ne his, rebum choro erroribus ut his. Omnium impedit oporteat eu per. Hinc malorum labitur ut mei, ut has solet voluptaria. Exerci diceret vivendo et eum. Vis quando voluptatibus in. Ex est alienum laboramus, elitr oportere facilisis id vim. Ut causae aliquip per, esse exerci consetetur nam at, vel ei mazim invenire omittantur. In quo veniam admodum.
-
-Ea vocent dolorum mei. Eum volutpat definiebas te, in lorem omittam eos, cum alterum inermis sententiae no. Quo ex corpora forensibus interpretaris, an cum aliquid volutpat, oporteat delicata cu nec. Sit idque conceptam cu. Et vim animal scaevola, qui an omnis nominati platonem, ne est natum augue persecuti. Ad munere insolens eos, sit vocibus fierent vivendum ad. Nec veri commune no, primis atomorum convenire an pro. Exerci moderatius dissentiunt ut mei. Elitr principes an mel, nec ut quem idque consetetur. Mea ei placerat reprehendunt, mundi urbanitas vim ea. Eu paulo dignissim eam. Dicat labore oporteat an eam. Etiam tincidunt conclusionemque cu vix, vim suas mazim sanctus et, aeque melius cum ad. Sit ut prompta dolorum maluisset. Possim gloriatur vituperatoribus eu vix, an pro aeque dicam iracundia. Sed alterum facilisi ne, veniam audiam ei his, mel ei reque dicant erroribus.
+              Hi, I'm Sebastian, Lorem ipsum dolor sit amet, liber consulatu sea
+              ne. Duo et case tantas posidonium, per te porro nostrud epicurei,
+              latine adipisci nam ad. Diam consectetuer mei ut. Audire electram
+              te nec, vel ne idque placerat theophrastus. Pri ne indoctum
+              intellegat, at brute soleat everti quo. Sea prima equidem
+              assueverit te, clita partem quo ei. Vim eu minim dicit
+              vituperatoribus, sensibus recteque neglegentur et sit, cu eos eros
+              vocent gloriatur. Id omnes molestiae usu, per ludus aperiam
+              placerat no, est delenit scaevola constituto ex. Solet pericula ne
+              his, rebum choro erroribus ut his. Omnium impedit oporteat eu per.
+              Hinc malorum labitur ut mei, ut has solet voluptaria. Exerci
+              diceret vivendo et eum. Vis quando voluptatibus in. Ex est alienum
+              laboramus, elitr oportere facilisis id vim. Ut causae aliquip per,
+              esse exerci consetetur nam at, vel ei mazim invenire omittantur.
+              In quo veniam admodum. Ea vocent dolorum mei. Eum volutpat
+              definiebas te, in lorem omittam eos, cum alterum inermis
+              sententiae no. Quo ex corpora forensibus interpretaris, an cum
+              aliquid volutpat, oporteat delicata cu nec. Sit idque conceptam
+              cu. Et vim animal scaevola, qui an omnis nominati platonem, ne est
+              natum augue persecuti. Ad munere insolens eos, sit vocibus fierent
+              vivendum ad. Nec veri commune no, primis atomorum convenire an
+              pro. Exerci moderatius dissentiunt ut mei. Elitr principes an mel,
+              nec ut quem idque consetetur. Mea ei placerat reprehendunt, mundi
+              urbanitas vim ea. Eu paulo dignissim eam. Dicat labore oporteat an
+              eam. Etiam tincidunt conclusionemque cu vix, vim suas mazim
+              sanctus et, aeque melius cum ad. Sit ut prompta dolorum maluisset.
+              Possim gloriatur vituperatoribus eu vix, an pro aeque dicam
+              iracundia. Sed alterum facilisi ne, veniam audiam ei his, mel ei
+              reque dicant erroribus.
             </p>
           </div>
         </div>
       </section>
     </main>
     <footer>
-        <h2> <small>hire me plez</small></h2>
+      <div class="footerContainer">
+        <!-- <div class="location">
+            <h3>Location</h3>
+        </div> -->
+        <div class="socialIcons">
+          <a href="https://github.com/Andrade-Sebastian" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://gitlab.com/sebastianandrade7" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
+          <a href="https://www.linkedin.com/in/sebastian-andrade-5a8848106/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:sebastiana@unr.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="#">Back to the Top</a></li>
+            <li>
+              <a href="./Technical Resume PDF - 2024.pdf" target="_blank">Resume</a>
+            </li>
+            <li>
+              <a href="mailto:sebastiana@unr.edu" target="_blank">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          <small
+            >Copyright &copy;2024; Designed by
+            <span class="designer"> me!</span></small
+          >
+        </p>
+      </div>
     </footer>
   </body>
 </html>
